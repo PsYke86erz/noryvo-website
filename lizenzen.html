@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open-Source-Lizenzen – Noryvo Messenger</title>
+<style>
+:root { --bg: #0a0a0f; --card: #13131a; --text: #e4e4e7; --muted: #9ca3af; --purple: #8C64FF; --teal: #4FD1C5; --border: #27272a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+.container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+nav { background: var(--card); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 10; }
+nav .inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: var(--muted); text-decoration: none; font-size: 14px; transition: color .2s; }
+nav a:hover, nav a.active { color: var(--purple); }
+.logo { font-size: 20px; font-weight: 700; background: linear-gradient(135deg, var(--purple), var(--teal)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+h1 { font-size: 32px; margin-bottom: 8px; background: linear-gradient(135deg, var(--purple), var(--teal)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+h2 { font-size: 22px; margin-top: 32px; margin-bottom: 12px; color: var(--purple); }
+p, li { color: var(--muted); margin-bottom: 8px; }
+.meta { font-size: 13px; color: var(--muted); margin-bottom: 32px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+th { text-align: left; padding: 12px; color: var(--purple); border-bottom: 2px solid var(--border); font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+tr:hover td { background: rgba(140,100,255,0.05); }
+footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); margin-top: 60px; }
+</style>
+</head>
+<body>
+<nav><div class="inner">
+  <span class="logo">Noryvo</span>
+  <div>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html" style="margin-left:20px">Impressum</a>
+    <a href="nutzungsbedingungen.html" style="margin-left:20px">Nutzungsbedingungen</a>
+    <a href="lizenzen.html" class="active" style="margin-left:20px">Lizenzen</a>
+  </div>
+</div></nav>
+<div class="container">
+<h1>Open-Source-Lizenzen</h1>
+<p class="meta">Noryvo Messenger nutzt folgende Open-Source-Bibliotheken</p>
+
+<h2>Flutter / Dart</h2>
+<table>
+<tr><th>Paket</th><th>Lizenz</th><th>Verwendung</th></tr>
+<tr><td>flutter</td><td>BSD-3</td><td>UI-Framework</td></tr>
+<tr><td>flutter_bloc</td><td>MIT</td><td>State Management</td></tr>
+<tr><td>dio</td><td>MIT</td><td>HTTP-Client</td></tr>
+<tr><td>socket_io_client</td><td>MIT</td><td>WebSocket-Verbindung</td></tr>
+<tr><td>go_router</td><td>BSD-3</td><td>Navigation</td></tr>
+<tr><td>flutter_secure_storage</td><td>BSD-3</td><td>Sichere Datenspeicherung</td></tr>
+<tr><td>firebase_core</td><td>BSD-3</td><td>Firebase-Integration</td></tr>
+<tr><td>firebase_messaging</td><td>BSD-3</td><td>Push-Benachrichtigungen</td></tr>
+<tr><td>flutter_webrtc</td><td>MIT</td><td>Audio-/Videoanrufe</td></tr>
+<tr><td>geolocator</td><td>MIT</td><td>Standortdienste</td></tr>
+<tr><td>image_picker</td><td>Apache-2.0</td><td>Bildauswahl</td></tr>
+<tr><td>just_audio</td><td>Apache-2.0</td><td>Audio-Wiedergabe</td></tr>
+<tr><td>local_auth</td><td>BSD-3</td><td>Biometrische Auth</td></tr>
+<tr><td>sqflite</td><td>MIT</td><td>Lokale Datenbank</td></tr>
+<tr><td>cached_network_image</td><td>MIT</td><td>Bild-Caching</td></tr>
+<tr><td>flutter_animate</td><td>MIT</td><td>Animationen</td></tr>
+<tr><td>google_fonts</td><td>Apache-2.0</td><td>Schriftarten</td></tr>
+<tr><td>share_plus</td><td>BSD-3</td><td>Teilen-Funktion</td></tr>
+<tr><td>video_player</td><td>BSD-3</td><td>Video-Wiedergabe</td></tr>
+<tr><td>record</td><td>BSD-3</td><td>Sprachaufnahme</td></tr>
+</table>
+
+<h2>Backend (Node.js)</h2>
+<table>
+<tr><th>Paket</th><th>Lizenz</th><th>Verwendung</th></tr>
+<tr><td>NestJS</td><td>MIT</td><td>Backend-Framework</td></tr>
+<tr><td>TypeORM</td><td>MIT</td><td>Datenbankabstraktion</td></tr>
+<tr><td>Socket.IO</td><td>MIT</td><td>Echtzeit-Kommunikation</td></tr>
+<tr><td>Helmet</td><td>MIT</td><td>HTTP-Sicherheitsheader</td></tr>
+<tr><td>Passport</td><td>MIT</td><td>Authentifizierung</td></tr>
+</table>
+
+<h2>Lizenztext</h2>
+<p>Die vollständigen Lizenztexte der einzelnen Pakete sind in den jeweiligen Repositories auf <a href="https://pub.dev" style="color:var(--teal)">pub.dev</a> und <a href="https://www.npmjs.com" style="color:var(--teal)">npmjs.com</a> einsehbar.</p>
+</div>
+<footer>© 2026 Noryvo Messenger · Normen Ehrentraut · Sassenberg, Deutschland</footer>
+</body>
+</html>

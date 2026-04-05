@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noryvo Messenger</title>
+<meta name="description" content="Noryvo Messenger – Sicher kommunizieren. Für iOS und Android.">
+<style>
+:root { --bg: #0a0a0f; --card: #13131a; --text: #e4e4e7; --muted: #9ca3af; --purple: #8C64FF; --teal: #4FD1C5; --border: #27272a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+.hero { text-align: center; padding: 120px 24px 80px; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(140,100,255,0.15), transparent 70%); pointer-events: none; }
+.logo { font-size: 56px; font-weight: 800; background: linear-gradient(135deg, var(--purple), var(--teal)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; }
+.tagline { font-size: 20px; color: var(--muted); max-width: 500px; margin: 0 auto 40px; }
+.badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.badge { display: inline-flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--border); padding: 12px 24px; border-radius: 12px; color: var(--text); text-decoration: none; font-size: 15px; transition: border-color .3s; }
+.badge:hover { border-color: var(--purple); }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; padding: 0 24px 80px; }
+.feature { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+.feature h3 { color: var(--teal); font-size: 18px; margin-bottom: 8px; }
+.feature p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+.links { text-align: center; padding: 40px 24px; }
+.links a { color: var(--muted); text-decoration: none; margin: 0 16px; font-size: 14px; transition: color .2s; }
+.links a:hover { color: var(--purple); }
+footer { text-align: center; padding: 40px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="logo">Noryvo</div>
+  <p class="tagline">Sicher kommunizieren. Glasklares Design. Für iOS und Android.</p>
+  <div class="badges">
+    <a href="#" class="badge">📱 App Store (iOS)</a>
+    <a href="#" class="badge">🤖 Google Play (Android)</a>
+  </div>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <h3>🔒 Sicher</h3>
+    <p>TLS 1.3 Verschlüsselung. Server in Deutschland. DSGVO-konform.</p>
+  </div>
+  <div class="feature">
+    <h3>💬 Echtzeit</h3>
+    <p>Nachrichten, Bilder, Videos und Sprachnachrichten in Echtzeit.</p>
+  </div>
+  <div class="feature">
+    <h3>📞 Anrufe</h3>
+    <p>Audio- und Videoanrufe über WebRTC – direkt und verschlüsselt.</p>
+  </div>
+  <div class="feature">
+    <h3>🎨 Glassmorphism</h3>
+    <p>Modernes Glass-Design. Dunkel, elegant, einzigartig.</p>
+  </div>
+  <div class="feature">
+    <h3>📍 Nearby</h3>
+    <p>Entdecke Nutzer in deiner Nähe – nur wenn du willst.</p>
+  </div>
+  <div class="feature">
+    <h3>🌍 Made in Germany</h3>
+    <p>Hosting in Deutschland. Datenschutz nach europäischem Standard.</p>
+  </div>
+</div>
+
+<div class="links">
+  <a href="datenschutz.html">Datenschutz</a>
+  <a href="impressum.html">Impressum</a>
+  <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+  <a href="lizenzen.html">Lizenzen</a>
+</div>
+<footer>© 2026 Noryvo Messenger · Normen Ehrentraut · Sassenberg, Deutschland</footer>
+</body>
+</html>
